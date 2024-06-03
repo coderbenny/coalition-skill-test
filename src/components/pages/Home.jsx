@@ -4,7 +4,7 @@ import PatientDetails from "../ui/PatientDetails";
 
 export default function Home() {
   return (
-    <div className="flex items-center p-3">
+    <div className="flex items-center p-3 gap-2">
       <Patients />
       <Diagnosis />
       <PatientDetails />

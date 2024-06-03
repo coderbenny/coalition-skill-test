@@ -1,8 +1,8 @@
 export default function Header() {
   return (
     <div className="flex justify-between items-center">
-      <p className="">Logo</p>
-      <div className="flex justif-between gap-3">
+      <img src="/TestLogo.svg" alt="profile" className="" />
+      <div className="flex text-[14px] gap-3">
         <p className="">Overview</p>
         <p className="">Patients</p>
         <p className="">Schedule</p>

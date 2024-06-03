@@ -5,7 +5,9 @@ export default function PatientDetails() {
     <div className="w-1/4">
       <div className="flex flex-col justify-center">
         <div className="bg-gray-200 h-40 w-40 rounded-full mb-3 mx-auto"></div>
-        <h3 className="font-bold text-center text-xl mb-2">Jessica Taylor</h3>
+        <h2 className="font-bold text-[24px] text-center mb-2">
+          Jessica Taylor
+        </h2>
       </div>
       <PatientField />
       <PatientField />
