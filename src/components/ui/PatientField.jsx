@@ -1,10 +1,10 @@
-export default function PatientField() {
+export default function PatientField({ icon, name, contents }) {
   return (
-    <div className="flex items-center gap-2 mb-3">
-      <div className="bg-gray-200 h-7 w-7 rounded-md"></div>
+    <div className="flex items-center gap-4 mb-3">
+      <img src={icon} alt="patient icon" className="h-7 w-7" />
       <div className="flex flex-col">
-        <h4 className="font-semibold uppercase text-md">Date of Birth</h4>
-        <p className="text-sm">August, 23 1996</p>
+        <h4 className="font-bold uppercase text-gray-400 text-md">{name}</h4>
+        <p className="text-sm">{contents}</p>
       </div>
     </div>
   );

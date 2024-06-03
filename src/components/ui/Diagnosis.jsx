@@ -3,7 +3,7 @@ import Insight from "./Insight";
 
 export default function Diagnosis() {
   return (
-    <div className="w-1/2">
+    <div className="w-1/2 h-full">
       <h2 className="text-[24px] font-bold">Diagnosis History</h2>
       <div className="">
         <div className="bg-gray-200 h-[298px] w-full"></div>
