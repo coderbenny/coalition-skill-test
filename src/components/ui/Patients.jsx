@@ -5,7 +5,11 @@ export default function Patients() {
     <div className="w-1/4 h-full">
       <div className="flex justify-between items-center">
         <h1 className="font-bold text-[24px]">Patients</h1>
-        <div className="bg-gray-200 h-5 w-5"></div>
+        <img
+          src="/search_FILL0_wght300_GRAD0_opsz24.png"
+          alt=""
+          className="h-5 w-5"
+        />
       </div>
       <div className="">
         {patients.map((patient, index) => (
