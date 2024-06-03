@@ -23,7 +23,7 @@ export default function Header() {
           <img
             src="/calendar_today_FILL0_wght300_GRAD0_opsz24.png"
             alt="schedule"
-            className="h-5 w-5 mr-1"
+            className="h-4 w-4 mr-1"
           />
           Schedule
         </p>
@@ -31,7 +31,7 @@ export default function Header() {
           <img
             src="/chat_bubble_FILL0_wght300_GRAD0_opsz24.png"
             alt="message"
-            className="h-5 w-5 mr-1"
+            className="h-4 w-4 mr-1"
           />
           Message
         </p>
@@ -39,7 +39,7 @@ export default function Header() {
           <img
             src="/credit_card_FILL0_wght300_GRAD0_opsz24.png"
             alt="home"
-            className="h-5 w-5 mr-1"
+            className="h-4 w-4 mr-1"
           />
           Transactions
         </p>
