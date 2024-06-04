@@ -4,7 +4,7 @@ import { CurrentPatientContext } from "../context/CurrentPatientContext";
 
 export default function PatientDetails() {
   const { patient } = useContext(CurrentPatientContext);
-  console.log(patient);
+  // console.log(patient);
 
   return (
     <div className="w-1/4 h-full">
@@ -31,7 +31,11 @@ export default function PatientDetails() {
         name="Date of Birth"
         contents={patient ? patient.date_of_birth : "Loading"}
       />
-      <PatientField icon="/FemaleIcon.png" name="Gender" contents="Female" />
+      <PatientField
+        icon="/FemaleIcon.png"
+        name="Gender"
+        contents={patient ? patient.gender : "Loading"}
+      />
       <PatientField
         icon="/PhoneIcon.png"
         name="Contact Info"

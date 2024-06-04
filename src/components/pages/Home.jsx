@@ -39,13 +39,13 @@ export default function Home() {
       .catch((error) => console.log("error", error));
   }, []);
 
-  console.log(patients);
-  console.log(patient);
+  // console.log(patients);
+  // console.log(patient);
   return (
     <div className="flex items-center p-3 gap-2">
       <Patients />
       <Diagnosis />
-      <PatientDetails patient={patient} />
+      <PatientDetails />
     </div>
   );
 }
