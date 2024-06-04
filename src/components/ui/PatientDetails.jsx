@@ -55,7 +55,7 @@ export default function PatientDetails() {
       />
       <button
         type="button"
-        className="rounded-3xl px-3 bg-teal-300 p-2 ml-10 mt-5 mb-5"
+        className="rounded-3xl px-3 bg-[#01F0D0] p-2 ml-10 mt-5 mb-5"
       >
         Show All Information
       </button>

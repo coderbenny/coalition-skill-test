@@ -52,21 +52,23 @@ export default function Diagnosis() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-3">
           <Insight
             title="Respiratory Rate"
-            metrics={patient ? dgs.respiratory_rate.value : "Loading..."}
+            metrics={
+              patient ? dgs.respiratory_rate.value + "bpm" : "Loading..."
+            }
             comment={patient ? dgs.respiratory_rate.levels : "Loading..."}
             icon="/respiratory_rate.png"
             bgColor="#E0F3FA"
           />
           <Insight
             title="Temperature'"
-            metrics={patient ? dgs.temperature.value : "Loading..."}
+            metrics={patient ? dgs.temperature.value + "°F" : "Loading..."}
             comment={patient ? dgs.temperature.levels : "Loading..."}
             icon="/temperature.png"
             bgColor="#FFE6E9"
           />
           <Insight
             title="Heart Rate"
-            metrics={patient ? dgs.heart_rate.value : "Loading..."}
+            metrics={patient ? dgs.heart_rate.value + "bpm" : "Loading..."}
             comment={patient ? dgs.heart_rate.levels : "Loading..."}
             icon="/HeartBPM.png"
             bgColor="#FFE6F1"
