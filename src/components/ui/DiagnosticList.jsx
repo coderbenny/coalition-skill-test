@@ -6,9 +6,9 @@ export default function DiagnosticList() {
 
   const diagnosticList = patient ? patient.diagnostic_list : [];
 
-  console.log(diagnosticList);
+  // console.log(diagnosticList);
 
-  console.log(patient);
+  // console.log(patient);
 
   return (
     <div className="mt-5">

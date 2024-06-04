@@ -5,16 +5,10 @@ import { CurrentPatientContext } from "../context/CurrentPatientContext";
 
 export default function Diagnosis() {
   const { patient } = useContext(CurrentPatientContext);
-  const [diagnosis, setDiagnosis] = useState(null);
-
-  // useEffect(() => {
-  //   if (patient) {
-  //     const dg = patient.map((data) => data);
-  //     setDiagnosis(dg);
-  //   }
-  // }, [patient]);
-
-  // console.log(patient);
+  const dgs = patient ? patient.diagnosis_history[0] : [];
+  // const rate = dgs.respiratory_rate;
+  console.log(dgs);
+  // console.log(rate);
 
   return (
     <div className="w-1/2 h-full">
@@ -24,20 +18,20 @@ export default function Diagnosis() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-3">
           <Insight
             title="Respiratory Rate"
-            metrics={patient ? patient.date_of_birth : "Loading"}
-            comment="Normal"
+            metrics={patient ? dgs.respiratory_rate.value : "Loading"}
+            comment={patient ? dgs.respiratory_rate.levels : "Loading"}
             icon="/respiratory_rate.png"
           />
           <Insight
             title="Temperature'"
-            metrics="98.6F"
-            comment="Normal"
+            metrics={patient ? dgs.temperature.value : "Loading"}
+            comment={patient ? dgs.temperature.levels : "Loading"}
             icon="/temperature.png"
           />
           <Insight
             title="Heart Rate"
-            metrics="78bpm"
-            comment="Lower than average"
+            metrics={patient ? dgs.heart_rate.value : "Loading"}
+            comment={patient ? dgs.heart_rate.levels : "Loading"}
             icon="/HeartBPM.png"
           />
         </div>
