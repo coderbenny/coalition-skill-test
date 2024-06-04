@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import PatientField from "./PatientField";
 import { CurrentPatientContext } from "../context/CurrentPatientContext";
+import LabResults from "./LabResuts";
 
 export default function PatientDetails() {
   const { patient } = useContext(CurrentPatientContext);
@@ -53,10 +54,12 @@ export default function PatientDetails() {
       />
       <button
         type="button"
-        className="rounded-3xl px-3 bg-teal-300 p-2 ml-10 mt-5"
+        className="rounded-3xl px-3 bg-teal-300 p-2 ml-10 mt-5 mb-5"
       >
         Show All Information
       </button>
+
+      <LabResults />
     </div>
   );
 }
