@@ -7,7 +7,7 @@ export default function Insight({ icon, title, metrics, comment, bgColor }) {
       <img src={icon} alt="diagnostics" className="h-20 w-20 mb-2" />
       <h4 className="font-bold text-gray-600">{title}</h4>
       <p className="font-bold text-xl mb-3">{metrics}</p>
-      <p className="font-bold text-sm tracking-wide">{comment}</p>
+      <p className="font-semibold text-sm tracking-wide">{comment}</p>
     </div>
   );
 }
