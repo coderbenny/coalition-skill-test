@@ -31,6 +31,7 @@ export default function PatientDetails() {
         icon="/BirthIcon.png"
         name="Date of Birth"
         contents={patient ? patient.date_of_birth : "Loading"}
+        bgColor="black"
       />
       <PatientField
         icon="/FemaleIcon.png"

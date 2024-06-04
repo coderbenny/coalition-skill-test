@@ -55,18 +55,21 @@ export default function Diagnosis() {
             metrics={patient ? dgs.respiratory_rate.value : "Loading..."}
             comment={patient ? dgs.respiratory_rate.levels : "Loading..."}
             icon="/respiratory_rate.png"
+            bgColor="#E0F3FA"
           />
           <Insight
             title="Temperature'"
             metrics={patient ? dgs.temperature.value : "Loading..."}
             comment={patient ? dgs.temperature.levels : "Loading..."}
             icon="/temperature.png"
+            bgColor="#FFE6E9"
           />
           <Insight
             title="Heart Rate"
             metrics={patient ? dgs.heart_rate.value : "Loading..."}
             comment={patient ? dgs.heart_rate.levels : "Loading..."}
             icon="/HeartBPM.png"
+            bgColor="#FFE6F1"
           />
         </div>
         <DiagnosticList />
