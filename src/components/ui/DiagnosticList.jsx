@@ -14,20 +14,23 @@ export default function DiagnosticList() {
     <div className="mt-5">
       <h2 className="text-[24px] mb-3 font-bold">Diagnostic List</h2>
       <table className="w-full text-left px-2">
-        <tr className="bg-gray-200">
-          <th className="p-2">Problem/Diagnostics</th>
-          <th className="p-2">Description</th>
-          <th className="p-2">Status</th>
-        </tr>
-
-        {diagnosticList &&
-          diagnosticList.map((dg, index) => (
-            <tr key={index}>
-              <td className="p-2">{dg.name}</td>
-              <td className="p-2">{dg.description}</td>
-              <td className="p-2">{dg.status}</td>
-            </tr>
-          ))}
+        <thead>
+          <tr className="bg-gray-200">
+            <th className="p-2">Problem/Diagnostics</th>
+            <th className="p-2">Description</th>
+            <th className="p-2">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {diagnosticList &&
+            diagnosticList.map((dg, index) => (
+              <tr key={index}>
+                <td className="p-2">{dg.name}</td>
+                <td className="p-2">{dg.description}</td>
+                <td className="p-2">{dg.status}</td>
+              </tr>
+            ))}
+        </tbody>
       </table>
     </div>
   );
